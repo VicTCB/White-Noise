@@ -30,6 +30,12 @@ albedo_color = Color(0, 0, 0, 1)
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e00fx"]
 albedo_color = Color(0, 0, 0, 0)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5nywm"]
+albedo_color = Color(0.4509804, 0.42352942, 0.17254902, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mawi2"]
+albedo_color = Color(0.2509804, 0.3372549, 0.12941177, 1)
+
 [node name="Mapleford_Springs" type="Node3D" unique_id=891275907]
 
 [node name="BaseGround" type="StaticBody3D" parent="." unique_id=1824315578]
@@ -43,405 +49,405 @@ shape = SubResource("BoxShape3D_7gnd1")
 [node name="Grid" type="StaticBody3D" parent="." unique_id=838621783]
 metadata/_edit_lock_ = true
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Grid" unique_id=2065972039]
+[node name="A0" type="MeshInstance3D" parent="Grid" unique_id=2065972039]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -89.999825, 0.0040457696, -90.00005)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D2" type="MeshInstance3D" parent="Grid" unique_id=838891693]
+[node name="A1" type="MeshInstance3D" parent="Grid" unique_id=838891693]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 0.004, -90)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D3" type="MeshInstance3D" parent="Grid" unique_id=859072737]
+[node name="A2" type="MeshInstance3D" parent="Grid" unique_id=859072737]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 0.004, -90)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D4" type="MeshInstance3D" parent="Grid" unique_id=665127415]
+[node name="A3" type="MeshInstance3D" parent="Grid" unique_id=665127415]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0.004, -90)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D5" type="MeshInstance3D" parent="Grid" unique_id=1749649105]
+[node name="A4" type="MeshInstance3D" parent="Grid" unique_id=1749649105]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0.004, -90)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D6" type="MeshInstance3D" parent="Grid" unique_id=1028721919]
+[node name="A5" type="MeshInstance3D" parent="Grid" unique_id=1028721919]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.004, -90)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D7" type="MeshInstance3D" parent="Grid" unique_id=560764642]
+[node name="A6" type="MeshInstance3D" parent="Grid" unique_id=560764642]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.004, -90)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D8" type="MeshInstance3D" parent="Grid" unique_id=1806087201]
+[node name="A7" type="MeshInstance3D" parent="Grid" unique_id=1806087201]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0.004, -90)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D9" type="MeshInstance3D" parent="Grid" unique_id=577953779]
+[node name="A8" type="MeshInstance3D" parent="Grid" unique_id=577953779]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70.00876, 0.004, -90)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D10" type="MeshInstance3D" parent="Grid" unique_id=765642024]
+[node name="A9" type="MeshInstance3D" parent="Grid" unique_id=765642024]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90.00876, 0.004, -90)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D11" type="MeshInstance3D" parent="Grid" unique_id=1017766014]
+[node name="B0" type="MeshInstance3D" parent="Grid" unique_id=1017766014]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90.093414, 0.004, -70)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D12" type="MeshInstance3D" parent="Grid" unique_id=1931188177]
+[node name="B1" type="MeshInstance3D" parent="Grid" unique_id=1931188177]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70.093414, 0.004, -70)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D13" type="MeshInstance3D" parent="Grid" unique_id=1375670264]
+[node name="B2" type="MeshInstance3D" parent="Grid" unique_id=1375670264]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.093414, 0.004, -70)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D14" type="MeshInstance3D" parent="Grid" unique_id=1892035205]
+[node name="B3" type="MeshInstance3D" parent="Grid" unique_id=1892035205]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.093414, 0.004, -70)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D15" type="MeshInstance3D" parent="Grid" unique_id=1643985782]
+[node name="B4" type="MeshInstance3D" parent="Grid" unique_id=1643985782]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.093414, 0.004, -70)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D16" type="MeshInstance3D" parent="Grid" unique_id=398283619]
+[node name="B5" type="MeshInstance3D" parent="Grid" unique_id=398283619]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.906586, 0.004, -70)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D17" type="MeshInstance3D" parent="Grid" unique_id=682628561]
+[node name="B6" type="MeshInstance3D" parent="Grid" unique_id=682628561]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.906586, 0.004, -70)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D18" type="MeshInstance3D" parent="Grid" unique_id=1005916292]
+[node name="B7" type="MeshInstance3D" parent="Grid" unique_id=1005916292]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.915344, 0.004, -70)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D20" type="MeshInstance3D" parent="Grid" unique_id=1858494038]
+[node name="B8" type="MeshInstance3D" parent="Grid" unique_id=1858494038]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 0.004, -70)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D19" type="MeshInstance3D" parent="Grid" unique_id=83893820]
+[node name="B9" type="MeshInstance3D" parent="Grid" unique_id=83893820]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 69.915344, 0.004, -70)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D21" type="MeshInstance3D" parent="Grid" unique_id=1340673871]
+[node name="C0" type="MeshInstance3D" parent="Grid" unique_id=1340673871]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -89.999825, 0.0040457696, -50.164196)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D22" type="MeshInstance3D" parent="Grid" unique_id=1471173262]
+[node name="C1" type="MeshInstance3D" parent="Grid" unique_id=1471173262]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 0.004, -50.164143)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D23" type="MeshInstance3D" parent="Grid" unique_id=1842183990]
+[node name="C2" type="MeshInstance3D" parent="Grid" unique_id=1842183990]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 0.004, -50.164143)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D24" type="MeshInstance3D" parent="Grid" unique_id=1895118375]
+[node name="C3" type="MeshInstance3D" parent="Grid" unique_id=1895118375]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0.004, -50.164143)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D25" type="MeshInstance3D" parent="Grid" unique_id=912908175]
+[node name="C4" type="MeshInstance3D" parent="Grid" unique_id=912908175]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0.004, -50.164143)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D26" type="MeshInstance3D" parent="Grid" unique_id=215225645]
+[node name="C5" type="MeshInstance3D" parent="Grid" unique_id=215225645]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.004, -50.164143)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D27" type="MeshInstance3D" parent="Grid" unique_id=907574522]
+[node name="C6" type="MeshInstance3D" parent="Grid" unique_id=907574522]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.004, -50.164143)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D28" type="MeshInstance3D" parent="Grid" unique_id=333603109]
+[node name="C7" type="MeshInstance3D" parent="Grid" unique_id=333603109]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0.004, -50.164143)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D29" type="MeshInstance3D" parent="Grid" unique_id=616092914]
+[node name="C8" type="MeshInstance3D" parent="Grid" unique_id=616092914]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70.00876, 0.004, -50.164143)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D30" type="MeshInstance3D" parent="Grid" unique_id=656827231]
+[node name="C9" type="MeshInstance3D" parent="Grid" unique_id=656827231]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90.00876, 0.004, -50.164143)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D31" type="MeshInstance3D" parent="Grid" unique_id=1688147225]
+[node name="D0" type="MeshInstance3D" parent="Grid" unique_id=1688147225]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90.093414, 0.004, -30.164143)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D32" type="MeshInstance3D" parent="Grid" unique_id=891361320]
+[node name="D1" type="MeshInstance3D" parent="Grid" unique_id=891361320]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70.093414, 0.004, -30.164143)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D33" type="MeshInstance3D" parent="Grid" unique_id=717252575]
+[node name="D2" type="MeshInstance3D" parent="Grid" unique_id=717252575]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.093414, 0.004, -30.164143)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D34" type="MeshInstance3D" parent="Grid" unique_id=765400788]
+[node name="D3" type="MeshInstance3D" parent="Grid" unique_id=765400788]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.093414, 0.004, -30.164143)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D35" type="MeshInstance3D" parent="Grid" unique_id=895046668]
+[node name="D4" type="MeshInstance3D" parent="Grid" unique_id=895046668]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.093414, 0.004, -30.164143)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D36" type="MeshInstance3D" parent="Grid" unique_id=1096327751]
+[node name="D5" type="MeshInstance3D" parent="Grid" unique_id=1096327751]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.906586, 0.004, -30.164143)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D37" type="MeshInstance3D" parent="Grid" unique_id=2132034220]
+[node name="D6" type="MeshInstance3D" parent="Grid" unique_id=2132034220]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.906586, 0.004, -30.164143)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D38" type="MeshInstance3D" parent="Grid" unique_id=145277920]
+[node name="D7" type="MeshInstance3D" parent="Grid" unique_id=145277920]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.915344, 0.004, -30.164143)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D39" type="MeshInstance3D" parent="Grid" unique_id=5896404]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 0.004, -30.164143)
-mesh = SubResource("BoxMesh_7gnd1")
-
-[node name="MeshInstance3D40" type="MeshInstance3D" parent="Grid" unique_id=154924612]
+[node name="D8" type="MeshInstance3D" parent="Grid" unique_id=154924612]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 69.915344, 0.004, -30.164143)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D41" type="MeshInstance3D" parent="Grid" unique_id=482793713]
+[node name="D9" type="MeshInstance3D" parent="Grid" unique_id=5896404]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 0.004, -30.164143)
+mesh = SubResource("BoxMesh_7gnd1")
+
+[node name="E0" type="MeshInstance3D" parent="Grid" unique_id=482793713]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -89.999825, 0.0040457696, -10.437904)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D42" type="MeshInstance3D" parent="Grid" unique_id=977987836]
+[node name="E1" type="MeshInstance3D" parent="Grid" unique_id=977987836]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 0.004, -10.437851)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D43" type="MeshInstance3D" parent="Grid" unique_id=86747768]
+[node name="E2" type="MeshInstance3D" parent="Grid" unique_id=86747768]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 0.004, -10.437851)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D44" type="MeshInstance3D" parent="Grid" unique_id=1938606018]
+[node name="E3" type="MeshInstance3D" parent="Grid" unique_id=1938606018]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0.004, -10.437851)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D45" type="MeshInstance3D" parent="Grid" unique_id=1170982722]
+[node name="E4" type="MeshInstance3D" parent="Grid" unique_id=1170982722]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0.004, -10.437851)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D46" type="MeshInstance3D" parent="Grid" unique_id=706794315]
+[node name="E5" type="MeshInstance3D" parent="Grid" unique_id=706794315]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.004, -10.437851)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D47" type="MeshInstance3D" parent="Grid" unique_id=1946323520]
+[node name="E6" type="MeshInstance3D" parent="Grid" unique_id=1946323520]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.004, -10.437851)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D48" type="MeshInstance3D" parent="Grid" unique_id=762325257]
+[node name="E7" type="MeshInstance3D" parent="Grid" unique_id=762325257]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0.004, -10.437851)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D49" type="MeshInstance3D" parent="Grid" unique_id=1651740689]
+[node name="E8" type="MeshInstance3D" parent="Grid" unique_id=1651740689]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70.00876, 0.004, -10.437851)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D50" type="MeshInstance3D" parent="Grid" unique_id=1094128960]
+[node name="E9" type="MeshInstance3D" parent="Grid" unique_id=1094128960]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90.00876, 0.004, -10.437851)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D51" type="MeshInstance3D" parent="Grid" unique_id=1518884114]
+[node name="F0" type="MeshInstance3D" parent="Grid" unique_id=1518884114]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90.093414, 0.004, 9.562149)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D52" type="MeshInstance3D" parent="Grid" unique_id=2143673434]
+[node name="F1" type="MeshInstance3D" parent="Grid" unique_id=2143673434]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70.093414, 0.004, 9.562149)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D53" type="MeshInstance3D" parent="Grid" unique_id=395446867]
+[node name="F2" type="MeshInstance3D" parent="Grid" unique_id=395446867]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.093414, 0.004, 9.562149)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D54" type="MeshInstance3D" parent="Grid" unique_id=95071614]
+[node name="F3" type="MeshInstance3D" parent="Grid" unique_id=95071614]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.093414, 0.004, 9.562149)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D55" type="MeshInstance3D" parent="Grid" unique_id=1995531967]
+[node name="F4" type="MeshInstance3D" parent="Grid" unique_id=1995531967]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.093414, 0.004, 9.562149)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D56" type="MeshInstance3D" parent="Grid" unique_id=439877751]
+[node name="F5" type="MeshInstance3D" parent="Grid" unique_id=439877751]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.906586, 0.004, 9.562149)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D57" type="MeshInstance3D" parent="Grid" unique_id=8761631]
+[node name="F6" type="MeshInstance3D" parent="Grid" unique_id=8761631]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.906586, 0.004, 9.562149)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D58" type="MeshInstance3D" parent="Grid" unique_id=1657745535]
+[node name="F7" type="MeshInstance3D" parent="Grid" unique_id=1657745535]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.915344, 0.004, 9.562149)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D59" type="MeshInstance3D" parent="Grid" unique_id=2039728560]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 0.004, 9.562149)
-mesh = SubResource("BoxMesh_7gnd1")
-
-[node name="MeshInstance3D60" type="MeshInstance3D" parent="Grid" unique_id=1692827903]
+[node name="F8" type="MeshInstance3D" parent="Grid" unique_id=1692827903]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 69.915344, 0.004, 9.562149)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D61" type="MeshInstance3D" parent="Grid" unique_id=1894895879]
+[node name="F9" type="MeshInstance3D" parent="Grid" unique_id=2039728560]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 0.004, 9.562149)
+mesh = SubResource("BoxMesh_7gnd1")
+
+[node name="G0" type="MeshInstance3D" parent="Grid" unique_id=1894895879]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -89.999825, 0.0040457696, 29.397953)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D62" type="MeshInstance3D" parent="Grid" unique_id=1165808859]
+[node name="G1" type="MeshInstance3D" parent="Grid" unique_id=1165808859]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 0.004, 29.398006)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D63" type="MeshInstance3D" parent="Grid" unique_id=600946791]
+[node name="G2" type="MeshInstance3D" parent="Grid" unique_id=600946791]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 0.004, 29.398006)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D64" type="MeshInstance3D" parent="Grid" unique_id=877412664]
+[node name="G3" type="MeshInstance3D" parent="Grid" unique_id=877412664]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0.004, 29.398006)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D65" type="MeshInstance3D" parent="Grid" unique_id=433181974]
+[node name="G4" type="MeshInstance3D" parent="Grid" unique_id=433181974]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0.004, 29.398006)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D66" type="MeshInstance3D" parent="Grid" unique_id=2033658320]
+[node name="G5" type="MeshInstance3D" parent="Grid" unique_id=2033658320]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.004, 29.398006)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D67" type="MeshInstance3D" parent="Grid" unique_id=1045488813]
+[node name="G6" type="MeshInstance3D" parent="Grid" unique_id=1045488813]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.004, 29.398006)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D68" type="MeshInstance3D" parent="Grid" unique_id=630773370]
+[node name="G7" type="MeshInstance3D" parent="Grid" unique_id=630773370]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0.004, 29.398006)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D69" type="MeshInstance3D" parent="Grid" unique_id=836237986]
+[node name="G8" type="MeshInstance3D" parent="Grid" unique_id=836237986]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70.00876, 0.004, 29.398006)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D70" type="MeshInstance3D" parent="Grid" unique_id=1203994243]
+[node name="G9" type="MeshInstance3D" parent="Grid" unique_id=1203994243]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90.00876, 0.004, 29.398006)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D71" type="MeshInstance3D" parent="Grid" unique_id=822393929]
+[node name="H0" type="MeshInstance3D" parent="Grid" unique_id=822393929]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90.093414, 0.004, 49.398006)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D72" type="MeshInstance3D" parent="Grid" unique_id=78322987]
+[node name="H1" type="MeshInstance3D" parent="Grid" unique_id=78322987]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70.093414, 0.004, 49.398006)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D73" type="MeshInstance3D" parent="Grid" unique_id=2078198471]
+[node name="H2" type="MeshInstance3D" parent="Grid" unique_id=2078198471]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.093414, 0.004, 49.398006)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D74" type="MeshInstance3D" parent="Grid" unique_id=1074776397]
+[node name="H3" type="MeshInstance3D" parent="Grid" unique_id=1074776397]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.093414, 0.004, 49.398006)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D75" type="MeshInstance3D" parent="Grid" unique_id=1059094696]
+[node name="H4" type="MeshInstance3D" parent="Grid" unique_id=1059094696]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.093414, 0.004, 49.398006)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D76" type="MeshInstance3D" parent="Grid" unique_id=184854703]
+[node name="H5" type="MeshInstance3D" parent="Grid" unique_id=184854703]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.906586, 0.004, 49.398006)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D77" type="MeshInstance3D" parent="Grid" unique_id=98073297]
+[node name="H6" type="MeshInstance3D" parent="Grid" unique_id=98073297]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.906586, 0.004, 49.398006)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D78" type="MeshInstance3D" parent="Grid" unique_id=1100361500]
+[node name="H7" type="MeshInstance3D" parent="Grid" unique_id=1100361500]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.915344, 0.004, 49.398006)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D79" type="MeshInstance3D" parent="Grid" unique_id=384337067]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 0.004, 49.398006)
-mesh = SubResource("BoxMesh_7gnd1")
-
-[node name="MeshInstance3D80" type="MeshInstance3D" parent="Grid" unique_id=423272792]
+[node name="H8" type="MeshInstance3D" parent="Grid" unique_id=423272792]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 69.915344, 0.004, 49.398006)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D81" type="MeshInstance3D" parent="Grid" unique_id=320563299]
+[node name="H9" type="MeshInstance3D" parent="Grid" unique_id=384337067]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 0.004, 49.398006)
+mesh = SubResource("BoxMesh_7gnd1")
+
+[node name="I0" type="MeshInstance3D" parent="Grid" unique_id=320563299]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -89.999825, 0.0040457696, 69.776276)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D82" type="MeshInstance3D" parent="Grid" unique_id=424867265]
+[node name="I1" type="MeshInstance3D" parent="Grid" unique_id=424867265]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, 0.004, 69.77634)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D83" type="MeshInstance3D" parent="Grid" unique_id=1271347924]
+[node name="I2" type="MeshInstance3D" parent="Grid" unique_id=1271347924]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50, 0.004, 69.77634)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D84" type="MeshInstance3D" parent="Grid" unique_id=344038264]
+[node name="I3" type="MeshInstance3D" parent="Grid" unique_id=344038264]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0.004, 69.77634)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D85" type="MeshInstance3D" parent="Grid" unique_id=1889106474]
+[node name="I4" type="MeshInstance3D" parent="Grid" unique_id=1889106474]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0.004, 69.77634)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D86" type="MeshInstance3D" parent="Grid" unique_id=1155954255]
+[node name="I5" type="MeshInstance3D" parent="Grid" unique_id=1155954255]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0.004, 69.77634)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D87" type="MeshInstance3D" parent="Grid" unique_id=629177870]
+[node name="I6" type="MeshInstance3D" parent="Grid" unique_id=629177870]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0.004, 69.77634)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D88" type="MeshInstance3D" parent="Grid" unique_id=270062804]
+[node name="I7" type="MeshInstance3D" parent="Grid" unique_id=270062804]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50, 0.004, 69.77634)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D89" type="MeshInstance3D" parent="Grid" unique_id=841796644]
+[node name="I8" type="MeshInstance3D" parent="Grid" unique_id=841796644]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70.00876, 0.004, 69.77634)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D90" type="MeshInstance3D" parent="Grid" unique_id=433825955]
+[node name="I9" type="MeshInstance3D" parent="Grid" unique_id=433825955]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90.00876, 0.004, 69.77634)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D91" type="MeshInstance3D" parent="Grid" unique_id=718837259]
+[node name="J0" type="MeshInstance3D" parent="Grid" unique_id=718837259]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90.093414, 0.004, 89.77634)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D92" type="MeshInstance3D" parent="Grid" unique_id=549468040]
+[node name="J1" type="MeshInstance3D" parent="Grid" unique_id=549468040]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70.093414, 0.004, 89.77634)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D93" type="MeshInstance3D" parent="Grid" unique_id=1826246442]
+[node name="J2" type="MeshInstance3D" parent="Grid" unique_id=1826246442]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.093414, 0.004, 89.77634)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D94" type="MeshInstance3D" parent="Grid" unique_id=726369929]
+[node name="J3" type="MeshInstance3D" parent="Grid" unique_id=726369929]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.093414, 0.004, 89.77634)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D95" type="MeshInstance3D" parent="Grid" unique_id=1487024128]
+[node name="J4" type="MeshInstance3D" parent="Grid" unique_id=1487024128]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.093414, 0.004, 89.77634)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D96" type="MeshInstance3D" parent="Grid" unique_id=1007788329]
+[node name="J5" type="MeshInstance3D" parent="Grid" unique_id=1007788329]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.906586, 0.004, 89.77634)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D97" type="MeshInstance3D" parent="Grid" unique_id=709817473]
+[node name="J6" type="MeshInstance3D" parent="Grid" unique_id=709817473]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.906586, 0.004, 89.77634)
 mesh = SubResource("BoxMesh_e00fx")
 
-[node name="MeshInstance3D98" type="MeshInstance3D" parent="Grid" unique_id=2087086303]
+[node name="J7" type="MeshInstance3D" parent="Grid" unique_id=2087086303]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49.915344, 0.004, 89.77634)
 mesh = SubResource("BoxMesh_7gnd1")
 
-[node name="MeshInstance3D99" type="MeshInstance3D" parent="Grid" unique_id=1296989463]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 0.004, 89.77634)
-mesh = SubResource("BoxMesh_7gnd1")
-
-[node name="MeshInstance3D100" type="MeshInstance3D" parent="Grid" unique_id=604789110]
+[node name="J8" type="MeshInstance3D" parent="Grid" unique_id=604789110]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 69.915344, 0.004, 89.77634)
 mesh = SubResource("BoxMesh_e00fx")
+
+[node name="J9" type="MeshInstance3D" parent="Grid" unique_id=1296989463]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 0.004, 89.77634)
+mesh = SubResource("BoxMesh_7gnd1")
 
 [node name="RemoveLater" type="StaticBody3D" parent="." unique_id=1984746805]
 
@@ -455,6 +461,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.194623, 0)
 size = Vector3(6, 0.5, 200)
 material = SubResource("StandardMaterial3D_e00fx")
 
-[node name="CSGCylinder3D" type="CSGCylinder3D" parent="RemoveLater" unique_id=1327514636]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.7167168, 0)
-radius = 18.581
+[node name="CenterPark" type="CSGCylinder3D" parent="RemoveLater" unique_id=1327514636]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.20581865, 0)
+radius = 16.0
+height = 0.5
+sides = 40
+material = SubResource("StandardMaterial3D_5nywm")
+
+[node name="Tree" type="CSGCylinder3D" parent="RemoveLater" unique_id=201029244]
+radius = 9.0
+sides = 40
+material = SubResource("StandardMaterial3D_mawi2")
