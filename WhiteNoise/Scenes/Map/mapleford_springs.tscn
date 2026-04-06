@@ -472,3 +472,32 @@ material = SubResource("StandardMaterial3D_5nywm")
 radius = 9.0
 sides = 40
 material = SubResource("StandardMaterial3D_mawi2")
+
+[node name="MemorialParkMain" type="CSGBox3D" parent="RemoveLater" unique_id=727598401]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -69.61231, 0.20524871, -69.652145)
+size = Vector3(55, 0.5, 55)
+
+[node name="MemorialParkPath" type="CSGBox3D" parent="RemoveLater/MemorialParkMain" unique_id=752970308]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 47.089096, -0.009442687, -0.17906189)
+size = Vector3(40, 0.5, 6)
+
+[node name="ShanonHome" type="CSGBox3D" parent="RemoveLater" unique_id=378515956]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90.30296, 0, -30.274733)
+size = Vector3(15, 1, 15)
+
+[node name="ZachHome" type="CSGBox3D" parent="RemoveLater" unique_id=1979018328]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.619972, 0, -11.978666)
+size = Vector3(15, 1, 15)
+
+[node name="Fountain" type="CSGCylinder3D" parent="RemoveLater" unique_id=788717306]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70.14339, 0, -20.867073)
+radius = 6.0
+sides = 20
+
+[node name="HouseNPC1" type="CSGBox3D" parent="RemoveLater" unique_id=1925392242]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90.34535, 0, -11.708942)
+size = Vector3(15, 1, 15)
+
+[node name="HouseNPC2" type="CSGBox3D" parent="RemoveLater" unique_id=1251843143]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.615875, 0, -29.945423)
+size = Vector3(15, 1, 15)
