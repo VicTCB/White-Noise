@@ -1,5 +1,23 @@
 [gd_scene format=3 uid="uid://bucttei7ug2jq"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7gnd1"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e00fx"]
+albedo_color = Color(0, 0, 0, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6ele4"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4ltmc"]
+albedo_color = Color(0, 0, 0, 0)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5nywm"]
+albedo_color = Color(0.4509804, 0.42352942, 0.17254902, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mawi2"]
+albedo_color = Color(0.2509804, 0.3372549, 0.12941177, 1)
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ym5w3"]
 albedo_color = Color(0.40392157, 0.25490198, 0.02745098, 1)
 
@@ -24,25 +42,198 @@ albedo_color = Color(0.8666667, 0.7372549, 0.58431375, 1)
 material = SubResource("StandardMaterial3D_mgg6b")
 size = Vector3(20, 0.1, 20)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7gnd1"]
-albedo_color = Color(0, 0, 0, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e00fx"]
-albedo_color = Color(0, 0, 0, 0)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6ele4"]
-albedo_color = Color(0, 0, 0, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4ltmc"]
-albedo_color = Color(0, 0, 0, 0)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5nywm"]
-albedo_color = Color(0.4509804, 0.42352942, 0.17254902, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mawi2"]
-albedo_color = Color(0.2509804, 0.3372549, 0.12941177, 1)
-
 [node name="Mapleford_Springs" type="Node3D" unique_id=891275907]
+
+[node name="RemoveLater" type="StaticBody3D" parent="." unique_id=1984746805]
+
+[node name="Road1" type="CSGBox3D" parent="RemoveLater" unique_id=211112413]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.19717193, 0)
+size = Vector3(200, 0.5, 6)
+material = SubResource("StandardMaterial3D_7gnd1")
+
+[node name="Road2" type="CSGBox3D" parent="RemoveLater" unique_id=1999003647]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.194623, 0)
+size = Vector3(6, 0.5, 200)
+material = SubResource("StandardMaterial3D_e00fx")
+
+[node name="Road3" type="CSGBox3D" parent="RemoveLater" unique_id=1834790296]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.984173, 0.15116024, 74.49175)
+size = Vector3(80, 0.5, 6)
+material = SubResource("StandardMaterial3D_6ele4")
+
+[node name="Road3A" type="CSGBox3D" parent="RemoveLater/Road3" unique_id=903742172]
+transform = Transform3D(0.977666, 0, 0.21016462, 0, 1, 0, -0.21016462, 0, 0.977666, -50.565235, 0.03221178, 2.4029007)
+size = Vector3(23, 0.5, 6)
+material = SubResource("StandardMaterial3D_4ltmc")
+
+[node name="Road3B" type="CSGBox3D" parent="RemoveLater/Road3" unique_id=842959654]
+transform = Transform3D(0.9057316, -1.2344273e-08, 0.42385164, 1.0705726e-08, 1, 6.246899e-09, -0.42385164, -1.1203771e-09, 0.9057316, -71.49724, 0.03221178, 9.537361)
+size = Vector3(23, 0.5, 6)
+material = SubResource("StandardMaterial3D_4ltmc")
+
+[node name="Road3C" type="CSGBox3D" parent="RemoveLater/Road3" unique_id=1465565548]
+transform = Transform3D(0.86672264, -1.239479e-08, 0.49879035, 1.0705725e-08, 1, 6.2468994e-09, -0.49879035, -7.4419054e-11, 0.86672264, 51.530228, 0.03221181, -6.867363)
+size = Vector3(30.074524, 0.5, 6)
+material = SubResource("StandardMaterial3D_4ltmc")
+
+[node name="Road3D" type="CSGBox3D" parent="RemoveLater/Road3" unique_id=885450364]
+transform = Transform3D(0.7001121, -1.19557e-08, 0.7140328, 1.0705726e-08, 1, 6.246899e-09, -0.7140328, 3.270708e-09, 0.7001121, 74.06653, 0.03221181, -24.216488)
+size = Vector3(28.905762, 0.5, 6)
+material = SubResource("StandardMaterial3D_4ltmc")
+
+[node name="Road3E" type="CSGBox3D" parent="RemoveLater/Road3" unique_id=1980970228]
+transform = Transform3D(0.41881824, -1.0156374e-08, 0.9080701, 1.0705724e-08, 1, 6.2468986e-09, -0.9080701, 7.105226e-09, 0.41881824, 88.65402, 0.03221178, -44.210907)
+size = Vector3(23.98523, 0.5, 6)
+material = SubResource("StandardMaterial3D_4ltmc")
+
+[node name="Road3F" type="CSGBox3D" parent="RemoveLater/Road3" unique_id=1419322901]
+transform = Transform3D(0.6727026, -1.18239285e-08, 0.739913, 1.0705726e-08, 1, 6.2469e-09, -0.739913, 3.718992e-09, 0.6727026, 102.090866, 0.032211795, -64.00264)
+size = Vector3(26.25595, 0.5, 6)
+material = SubResource("StandardMaterial3D_4ltmc")
+
+[node name="Road4" type="CSGBox3D" parent="RemoveLater" unique_id=622445093]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -67.68334, 0.19157231, 10.53018)
+size = Vector3(6, 0.5, 33.374817)
+
+[node name="Roundabout" type="CSGCylinder3D" parent="RemoveLater/Road4" unique_id=183788297]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3308105, 0, 23.878702)
+radius = 15.0
+height = 0.5
+sides = 60
+
+[node name="CenterPark" type="CSGCylinder3D" parent="RemoveLater" unique_id=1327514636]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.20581865, 0)
+radius = 16.0
+height = 0.5
+sides = 40
+material = SubResource("StandardMaterial3D_5nywm")
+
+[node name="Tree" type="CSGCylinder3D" parent="RemoveLater" unique_id=201029244]
+radius = 9.0
+sides = 40
+material = SubResource("StandardMaterial3D_mawi2")
+
+[node name="MemorialParkMain" type="CSGBox3D" parent="RemoveLater" unique_id=727598401]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -69.61231, 0.20524871, -69.652145)
+size = Vector3(55, 0.5, 55)
+
+[node name="MemorialParkPath" type="CSGBox3D" parent="RemoveLater/MemorialParkMain" unique_id=752970308]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.63415, -0.009442687, -3.4690628)
+size = Vector3(40, 0.5, 6)
+
+[node name="ShanonHome" type="CSGBox3D" parent="RemoveLater" unique_id=378515956]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90.30296, 0, -30.274733)
+size = Vector3(15, 1, 15)
+
+[node name="ZachHome" type="CSGBox3D" parent="RemoveLater" unique_id=1979018328]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.619972, 0, -11.978666)
+size = Vector3(15, 1, 15)
+
+[node name="Fountain" type="CSGCylinder3D" parent="RemoveLater" unique_id=788717306]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70.14339, 0, -20.867073)
+radius = 6.0
+sides = 20
+
+[node name="HouseNPC1" type="CSGBox3D" parent="RemoveLater" unique_id=1925392242]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90.34535, 0, -11.708942)
+size = Vector3(15, 1, 15)
+
+[node name="HouseNPC2" type="CSGBox3D" parent="RemoveLater" unique_id=1251843143]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.615875, 0, -29.945423)
+size = Vector3(15, 1, 15)
+
+[node name="ConvenienceStore" type="CSGBox3D" parent="RemoveLater" unique_id=1454450258]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.53434, 0, -88.577446)
+size = Vector3(35, 0.5, 20)
+
+[node name="Hospital" type="CSGBox3D" parent="RemoveLater" unique_id=1429529117]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.45086, 0, -49.693863)
+size = Vector3(35, 0.5, 35)
+
+[node name="FireStation" type="CSGBox3D" parent="RemoveLater" unique_id=1757203985]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.523865, 0, -15.534408)
+size = Vector3(35, 0.5, 25)
+
+[node name="Cafe" type="CSGBox3D" parent="RemoveLater" unique_id=1638609413]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.60476, 0, 15.535908)
+size = Vector3(35, 0.5, 25)
+
+[node name="PoliceStation" type="CSGBox3D" parent="RemoveLater" unique_id=1924900122]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.488708, 0, -15.538013)
+size = Vector3(35, 0.5, 25)
+
+[node name="TownHall" type="CSGBox3D" parent="RemoveLater" unique_id=241643810]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.450527, 0, 15.538014)
+size = Vector3(35, 0.5, 25)
+
+[node name="School" type="CSGBox3D" parent="RemoveLater" unique_id=1729356470]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.391113, 0, -79.864)
+size = Vector3(95, 0.5, 35)
+
+[node name="BusStation" type="CSGBox3D" parent="RemoveLater" unique_id=1230809499]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.585609, 0, -45.014175)
+size = Vector3(25, 0.5, 30)
+
+[node name="Park" type="CSGBox3D" parent="RemoveLater" unique_id=1962043132]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 69.692505, 0, -31.08154)
+size = Vector3(55, 0.5, 55)
+
+[node name="ParkAbandonedArea" type="CSGBox3D" parent="RemoveLater/Park" unique_id=1840548761]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.3153, 0, -12.797928)
+operation = 2
+size = Vector3(30, 0.5, 30)
+
+[node name="Library" type="CSGBox3D" parent="RemoveLater" unique_id=1309768604]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.53275, 0, 44.7464)
+size = Vector3(35, 0.5, 30)
+
+[node name="AbandonedBuilding" type="CSGBox3D" parent="RemoveLater" unique_id=328574988]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.840218, 0, 88.80486)
+size = Vector3(35, 0.5, 20)
+
+[node name="PizzaPlace" type="CSGBox3D" parent="RemoveLater" unique_id=33152031]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.627192, 0, 39.128147)
+size = Vector3(35, 0.5, 20)
+
+[node name="FastFoodChain" type="CSGBox3D" parent="RemoveLater" unique_id=296192034]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.54596, 0, 60.470886)
+size = Vector3(35, 0.5, 20)
+
+[node name="Warehouse" type="CSGBox3D" parent="RemoveLater" unique_id=1729630254]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.33004, 0, 88.81708)
+size = Vector3(35, 0.5, 20)
+
+[node name="GroceryStore" type="CSGBox3D" parent="RemoveLater" unique_id=803864134]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.068596, 0, 20.473099)
+size = Vector3(20, 0.5, 35)
+
+[node name="MiaHome" type="CSGBox3D" parent="RemoveLater" unique_id=416229081]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56.663593, 0, 10.5809555)
+size = Vector3(15, 0.5, 15)
+
+[node name="RinHome" type="CSGBox3D" parent="RemoveLater" unique_id=2056046632]
+transform = Transform3D(0.9335804, 0, 0.35836795, 0, 1, 0, -0.35836795, 0, 0.9335804, -47.933933, 0, 25.78163)
+size = Vector3(15, 0.5, 15)
+
+[node name="HouseNPC3" type="CSGBox3D" parent="RemoveLater" unique_id=1960827269]
+transform = Transform3D(0.83867055, 0, -0.54463905, 0, 1, 0, 0.54463905, 0, 0.83867055, -49.181957, 0, 45.717834)
+size = Vector3(15, 0.5, 15)
+
+[node name="AriHome" type="CSGBox3D" parent="RemoveLater" unique_id=148609377]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -69.17149, 0, 57.26022)
+size = Vector3(15, 0.5, 15)
+
+[node name="HouseNPC4" type="CSGBox3D" parent="RemoveLater" unique_id=1935569880]
+transform = Transform3D(0.83867055, 0, 0.54463905, 0, 1, 0, -0.54463905, 0, 0.83867055, -88.25494, 0, 46.556267)
+size = Vector3(15, 0.5, 15)
+
+[node name="HouseNPC5" type="CSGBox3D" parent="RemoveLater" unique_id=1493685291]
+transform = Transform3D(0.93358034, 0, -0.35836792, 0, 1, 0, 0.35836792, 0, 0.93358034, -90.16042, 0, 26.000755)
+size = Vector3(15, 0.5, 15)
+
+[node name="HouseNPC6" type="CSGBox3D" parent="RemoveLater" unique_id=1034392993]
+transform = Transform3D(0.9999999, 0, 0, 0, 1, 0, 0, 0, 0.9999999, -78.77849, 0, 10.573854)
+size = Vector3(15, 0.5, 15)
 
 [node name="BaseGround" type="StaticBody3D" parent="." unique_id=1824315578]
 
@@ -454,136 +645,3 @@ mesh = SubResource("BoxMesh_e00fx")
 [node name="J9" type="MeshInstance3D" parent="Grid" unique_id=1296989463]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 0.004, 89.77634)
 mesh = SubResource("BoxMesh_7gnd1")
-
-[node name="RemoveLater" type="StaticBody3D" parent="." unique_id=1984746805]
-
-[node name="Road1" type="CSGBox3D" parent="RemoveLater" unique_id=211112413]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.19717193, 0)
-size = Vector3(200, 0.5, 6)
-material = SubResource("StandardMaterial3D_7gnd1")
-
-[node name="Road2" type="CSGBox3D" parent="RemoveLater" unique_id=1999003647]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.194623, 0)
-size = Vector3(6, 0.5, 200)
-material = SubResource("StandardMaterial3D_e00fx")
-
-[node name="Road3" type="CSGBox3D" parent="RemoveLater" unique_id=1834790296]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.984173, 0.15116024, 74.49175)
-size = Vector3(80, 0.5, 6)
-material = SubResource("StandardMaterial3D_6ele4")
-
-[node name="Road3A" type="CSGBox3D" parent="RemoveLater/Road3" unique_id=903742172]
-transform = Transform3D(0.977666, 0, 0.21016462, 0, 1, 0, -0.21016462, 0, 0.977666, -50.565235, 0.03221178, 2.4029007)
-size = Vector3(23, 0.5, 6)
-material = SubResource("StandardMaterial3D_4ltmc")
-
-[node name="Road3B" type="CSGBox3D" parent="RemoveLater/Road3" unique_id=842959654]
-transform = Transform3D(0.9057316, -1.2344273e-08, 0.42385164, 1.0705726e-08, 1, 6.246899e-09, -0.42385164, -1.1203771e-09, 0.9057316, -71.49724, 0.03221178, 9.537361)
-size = Vector3(23, 0.5, 6)
-material = SubResource("StandardMaterial3D_4ltmc")
-
-[node name="Road3C" type="CSGBox3D" parent="RemoveLater/Road3" unique_id=1465565548]
-transform = Transform3D(0.8628138, -1.2394993e-08, 0.50552183, 1.0705726e-08, 1, 6.246899e-09, -0.50552183, 2.2064517e-11, 0.8628138, 50.81601, 0.03221181, -6.861946)
-size = Vector3(28.905762, 0.5, 6)
-material = SubResource("StandardMaterial3D_4ltmc")
-
-[node name="Road3D" type="CSGBox3D" parent="RemoveLater/Road3" unique_id=885450364]
-transform = Transform3D(0.63892895, -1.16457235e-08, 0.7692657, 1.0705726e-08, 1, 6.246899e-09, -0.7692657, 4.24422e-09, 0.63892895, 71.66572, 0.03221181, -24.584454)
-size = Vector3(28.905762, 0.5, 6)
-material = SubResource("StandardMaterial3D_4ltmc")
-
-[node name="Road3E" type="CSGBox3D" parent="RemoveLater/Road3" unique_id=1980970228]
-transform = Transform3D(0.35190704, -9.614736e-09, 0.93603504, 1.0705725e-08, 1, 6.2468986e-09, -0.93603504, 7.8226e-09, 0.35190704, 84.586365, 0.03221178, -46.050762)
-size = Vector3(23.98523, 0.5, 6)
-material = SubResource("StandardMaterial3D_4ltmc")
-
-[node name="Road3F" type="CSGBox3D" parent="RemoveLater/Road3" unique_id=1419322901]
-transform = Transform3D(0.7139841, -1.2017557e-08, 0.70016205, 1.0705725e-08, 1, 6.2468994e-09, -0.70016205, 3.0355491e-09, 0.7139841, 97.10092, 0.032211795, -64.95692)
-size = Vector3(25.851501, 0.5, 6)
-material = SubResource("StandardMaterial3D_4ltmc")
-
-[node name="CenterPark" type="CSGCylinder3D" parent="RemoveLater" unique_id=1327514636]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.20581865, 0)
-radius = 16.0
-height = 0.5
-sides = 40
-material = SubResource("StandardMaterial3D_5nywm")
-
-[node name="Tree" type="CSGCylinder3D" parent="RemoveLater" unique_id=201029244]
-radius = 9.0
-sides = 40
-material = SubResource("StandardMaterial3D_mawi2")
-
-[node name="MemorialParkMain" type="CSGBox3D" parent="RemoveLater" unique_id=727598401]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -69.61231, 0.20524871, -69.652145)
-size = Vector3(55, 0.5, 55)
-
-[node name="MemorialParkPath" type="CSGBox3D" parent="RemoveLater/MemorialParkMain" unique_id=752970308]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 46.63415, -0.009442687, -3.4690628)
-size = Vector3(40, 0.5, 6)
-
-[node name="ShanonHome" type="CSGBox3D" parent="RemoveLater" unique_id=378515956]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90.30296, 0, -30.274733)
-size = Vector3(15, 1, 15)
-
-[node name="ZachHome" type="CSGBox3D" parent="RemoveLater" unique_id=1979018328]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.619972, 0, -11.978666)
-size = Vector3(15, 1, 15)
-
-[node name="Fountain" type="CSGCylinder3D" parent="RemoveLater" unique_id=788717306]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70.14339, 0, -20.867073)
-radius = 6.0
-sides = 20
-
-[node name="HouseNPC1" type="CSGBox3D" parent="RemoveLater" unique_id=1925392242]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90.34535, 0, -11.708942)
-size = Vector3(15, 1, 15)
-
-[node name="HouseNPC2" type="CSGBox3D" parent="RemoveLater" unique_id=1251843143]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -50.615875, 0, -29.945423)
-size = Vector3(15, 1, 15)
-
-[node name="ConvenienceStore" type="CSGBox3D" parent="RemoveLater" unique_id=1454450258]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.53434, 0, -88.577446)
-size = Vector3(35, 0.5, 20)
-
-[node name="Hospital" type="CSGBox3D" parent="RemoveLater" unique_id=1429529117]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.45086, 0, -49.693863)
-size = Vector3(35, 0.5, 35)
-
-[node name="FireStation" type="CSGBox3D" parent="RemoveLater" unique_id=1757203985]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.523865, 0, -15.534408)
-size = Vector3(35, 0.5, 25)
-
-[node name="Cafe" type="CSGBox3D" parent="RemoveLater" unique_id=1638609413]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.60476, 0, 15.535908)
-size = Vector3(35, 0.5, 25)
-
-[node name="PoliceStation" type="CSGBox3D" parent="RemoveLater" unique_id=1924900122]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.488708, 0, -15.538013)
-size = Vector3(35, 0.5, 25)
-
-[node name="TownHall" type="CSGBox3D" parent="RemoveLater" unique_id=241643810]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.450527, 0, 15.538014)
-size = Vector3(35, 0.5, 25)
-
-[node name="School" type="CSGBox3D" parent="RemoveLater" unique_id=1729356470]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 50.391113, 0, -79.864)
-size = Vector3(95, 0.5, 35)
-
-[node name="BusStation" type="CSGBox3D" parent="RemoveLater" unique_id=1230809499]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.585609, 0, -45.014175)
-size = Vector3(25, 0.5, 30)
-
-[node name="Park" type="CSGBox3D" parent="RemoveLater" unique_id=1962043132]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 69.692505, 0, -31.08154)
-size = Vector3(55, 0.5, 55)
-
-[node name="ParkAbandonedArea" type="CSGBox3D" parent="RemoveLater/Park" unique_id=1840548761]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.3153, 0, -12.797928)
-operation = 2
-size = Vector3(30, 0.5, 30)
-
-[node name="Library" type="CSGBox3D" parent="RemoveLater" unique_id=1309768604]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.060295, 0, 44.7464)
-size = Vector3(30, 0.5, 30)

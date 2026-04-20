@@ -11,7 +11,17 @@ config_version=5
 [application]
 
 config/name="White Noise"
+run/main_scene="uid://dl5loo21celnf"
 config/features=PackedStringArray("4.6", "Forward Plus")
+boot_splash/image="uid://mh4bjvsy2ojv"
+config/icon="uid://bkm6qecqvwji7"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/mode=3
+window/vsync/vsync_mode=0
 
 [physics]
 
