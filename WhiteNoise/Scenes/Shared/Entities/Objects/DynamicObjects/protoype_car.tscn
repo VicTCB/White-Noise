@@ -1,0 +1,47 @@
+[gd_scene format=3 uid="uid://c4dn6gs37l2ca"]
+
+[ext_resource type="Script" uid="uid://ba7pf7nr8u1in" path="res://Scripts/Shared/Entities/Objects/DynamicObjects/protoype_car.gd" id="1_3qj70"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3qj70"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_r310f"]
+material = SubResource("StandardMaterial3D_3qj70")
+
+[sub_resource type="BoxMesh" id="BoxMesh_w2tea"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_r310f"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xi3iv"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_euwc2"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3qj70"]
+size = Vector3(1, 0.62890625, 0.8808594)
+
+[node name="ProtoypeCar" type="CharacterBody3D" unique_id=2080433652]
+script = ExtResource("1_3qj70")
+
+[node name="CarBody" type="MeshInstance3D" parent="." unique_id=1208251412]
+transform = Transform3D(1, 0, 0, 0, 0.49842942, 0, 0, 0, 2.0479372, 0, 0, 0)
+mesh = SubResource("BoxMesh_r310f")
+
+[node name="CarHead" type="CSGMesh3D" parent="." unique_id=1441214761]
+transform = Transform3D(1, 0, 0, 0, 0.7777241, 0, 0, 0, 0.735163, 0, 0.3328846, 0.27528775)
+mesh = SubResource("BoxMesh_w2tea")
+material = SubResource("StandardMaterial3D_r310f")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=2134614530]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1150143026]
+transform = Transform3D(0.9612467, 0, 0, 0, 0.38753647, 0, 0, 0, 2.013512, 0, 0, 1.6869805)
+shape = SubResource("BoxShape3D_xi3iv")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=234763090]
+transform = Transform3D(1, 0, 0, 0, 0.49424243, 0, 0, 0, 2.031901, 0, 0, 0)
+shape = SubResource("BoxShape3D_euwc2")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="." unique_id=68571931]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.83310956, 0, 0.40748036, 0.27121297)
+shape = SubResource("BoxShape3D_3qj70")

@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://ccrv34twb3rmh"]
+
+[ext_resource type="Script" uid="uid://c26o6di0vwaf8" path="res://Scripts/Content/Chapter1/Cutscenes/chapter_1_outro.gd" id="1_b7ldb"]
+[ext_resource type="VideoStream" uid="uid://bwrbpu5y8755h" path="res://Assets/Videos/Chapter 1 Outro.ogv" id="1_bcp6n"]
+
+[node name="Chapter 1 Outro" type="Node2D" unique_id=1231207070]
+script = ExtResource("1_b7ldb")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=1137857119]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("1_bcp6n")
+volume_db = 3.0
+autoplay = true
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=18018033]
+zoom = Vector2(1.4, 1.4)
+
+[connection signal="finished" from="VideoStreamPlayer" to="." method="_on_video_stream_player_finished"]

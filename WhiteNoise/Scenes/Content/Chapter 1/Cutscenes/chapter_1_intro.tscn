@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://c1td17xg5vu2n"]
+
+[ext_resource type="Script" uid="uid://djfb3igfydjbc" path="res://Scripts/Content/Chapter1/Cutscenes/chapter_1_intro.gd" id="1_o4g16"]
+[ext_resource type="VideoStream" uid="uid://bqf8641ruvwgb" path="res://Assets/Textures/Cutscenes/SCN_Chapter1_Intro/Chapter 1 Intro.ogv" id="1_pjv31"]
+
+[node name="Chapter 1 Intro" type="Node2D" unique_id=348435842]
+script = ExtResource("1_o4g16")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1771900628]
+zoom = Vector2(0.9, 0.9)
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=467185066]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("1_pjv31")
+autoplay = true
+
+[connection signal="finished" from="VideoStreamPlayer" to="." method="_on_video_stream_player_finished"]

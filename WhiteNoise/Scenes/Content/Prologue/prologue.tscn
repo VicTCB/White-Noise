@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bdh402awcife6"]
+
+[ext_resource type="VideoStream" uid="uid://d104ca1x6k1cx" path="res://Assets/Textures/Cutscenes/SCN_Prologue/Prologue.ogv" id="1_1oijc"]
+[ext_resource type="Script" uid="uid://b1yosdyhsyvhn" path="res://Scripts/Content/Prologue/prologue.gd" id="1_lcdjp"]
+
+[node name="Prologue" type="Node2D" unique_id=800783837]
+script = ExtResource("1_lcdjp")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=821313667]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("1_1oijc")
+autoplay = true
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1778149551]
+zoom = Vector2(0.9, 0.9)
+
+[connection signal="finished" from="VideoStreamPlayer" to="." method="_on_video_stream_player_finished"]

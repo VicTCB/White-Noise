@@ -1,0 +1,52 @@
+~ start
+Rin: Hi Ari! You're finally back! 
+Rin: I've missed you so much, we haven't seen each other for years! 
+Rin: So how are you?
+- I'm doing fine
+	Ari: I'm doing fine, just got off the bus stop.
+	Ari: The city is kinda okay too, been a bit busy there.
+	Rin: Oh, that's nice to hear. I guess you've been doing a lot of stuff in the city.
+	=> continue1
+- I'm doing great
+	Ari: I'm doing great! My career is going well.
+	Ari: My schedule is usually packed, but I was so lucky that the meetup landed on my one week break.
+	Rin: Oh, thats amazing. I guess you get to enjoy your stay here for the week.
+	=> continue1
+- I'm not doing well
+	Ari: I'm not doing well, I feel very off lately.
+	[b]Rin will remember that.[/b]
+	Rin: Aww, it will get better someday.
+	Rin: If you need someone to be there for you, always remember that I'm there for you.
+	Ari: I will, thanks for looking out for me.
+	[b]Rin will remember that.[/b]
+	[b]Rin trusts you more.[/b]
+	Your [b]Trust Level [/b] with Rin has increased by [b]100[/b]
+	=> continue1
+
+~ continue1
+Ari: So, what are you up to lately?
+Rin: Oh, I've been focusing on some stuff lately. Just some streaming and all.
+Ari: I didn't know you were a streamer.
+Rin: Yeah, I kinda have a specific niche when it comes to my contents.
+Rin: I don't think I'm that big.
+Ari: Really? What's your channel?
+Rin shows you her channel with her phone
+Ari: WHAT! That's a lot of followers.
+Rin: Shhh, I'm not that popular.
+Rin: Anyways, I'll be streaming tonight. Do you wanna watch my stream later?
+- Yes
+	Ari: yes, I will watch your stream tonight.
+	[b] Rin will take note of that.[/b]
+	Rin: YAY! Thank you. I'll make sure you'll enjoy the stream later!
+	Ari: I'm looking forward to it.
+- No
+	Ari: No, I don't think I can watch your stream tonight.
+	[b] Rin will remember that. [/b]
+	Rin: Oh, well you can drop by if you have the time.
+~ continue2
+Rin: Anyways, I have to go now.
+Rin: I'll just finish some things up, I'll see you in the meetup.
+Rin: I think everyone is there now.
+Rin: You can find them at the big abandoned warehouse. They're probably waiting for you.
+do get_tree().change_scene_to_file("res://Scenes/Cutscenes/placeholder_cutscene.tscn") 
+=> END

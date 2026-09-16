@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://bctgfp3gyc682"]
+
+[ext_resource type="Script" uid="uid://by726dbivmbds" path="res://Scripts/Shared/Entities/Characters/rin.gd" id="1_e44k1"]
+[ext_resource type="Texture2D" uid="uid://bdx2icgu7fxsd" path="res://Assets/Models/Full/Entities/Characters/Rin/RinFront.png" id="1_vdbci"]
+[ext_resource type="Resource" uid="uid://c6hl5ml1lmm2" path="res://Scenes/Content/Chapter 1/Dialogues/RinFirstMeet.dialogue" id="2_33jjt"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_e44k1"]
+size = Vector3(1, 1, 0.1)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_e44k1"]
+height = 0.45507813
+
+[node name="Rin" type="StaticBody3D" unique_id=1804175946]
+script = ExtResource("1_e44k1")
+dialogue_resource = ExtResource("2_33jjt")
+
+[node name="Sprite3D" type="Sprite3D" parent="." unique_id=1872707355]
+transform = Transform3D(0.064782195, 0, 0, 0, 0.064782195, 0, 0, 0, 1, 0, 0, 0)
+texture = ExtResource("1_vdbci")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1326508950]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("BoxShape3D_e44k1")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=710847677]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1485081209]
+transform = Transform3D(2.7018626, 0, 0, 0, 0.9534222, 0, 0, 0, 2.7018626, 0, -0.28281593, 0)
+shape = SubResource("CylinderShape3D_e44k1")

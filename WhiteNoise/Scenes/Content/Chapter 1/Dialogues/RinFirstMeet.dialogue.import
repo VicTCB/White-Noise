@@ -1,0 +1,16 @@
+[remap]
+
+importer="dialogue_manager"
+importer_version=15
+type="Resource"
+uid="uid://c6hl5ml1lmm2"
+path="res://.godot/imported/RinFirstMeet.dialogue-921f2822b62d5f48377f744b9eb3805a.tres"
+
+[deps]
+
+source_file="res://Scenes/Content/Chapter 1/Dialogues/RinFirstMeet.dialogue"
+dest_files=["res://.godot/imported/RinFirstMeet.dialogue-921f2822b62d5f48377f744b9eb3805a.tres"]
+
+[params]
+
+defaults=true

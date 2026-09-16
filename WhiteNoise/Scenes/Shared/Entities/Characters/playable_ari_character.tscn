@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://rmtbomxh02g"]
+
+[ext_resource type="Script" uid="uid://b46wnoj2gfvsw" path="res://Scripts/Shared/Entities/Characters/playable_ari_character.gd" id="1_0nnhe"]
+[ext_resource type="Texture2D" uid="uid://cac6yv7rddlhe" path="res://Assets/Models/Full/Entities/Characters/Ari/AriFront.png" id="1_on7lo"]
+[ext_resource type="Texture2D" uid="uid://qn8sr3hkye4h" path="res://Assets/Models/Full/Entities/Characters/Ari/AriLeft.png" id="2_0nnhe"]
+[ext_resource type="Texture2D" uid="uid://bniyqsjqeoip5" path="res://Assets/Models/Full/Entities/Characters/Ari/AriRight.png" id="3_wp3rd"]
+[ext_resource type="Texture2D" uid="uid://wyd06jqf6i7a" path="res://Assets/Models/Full/Entities/Characters/Ari/AriBack.png" id="4_lmhp4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jx4jp"]
+atlas = ExtResource("1_on7lo")
+region = Rect2(0, 0, 2048, 2048)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_roh1k"]
+atlas = ExtResource("2_0nnhe")
+region = Rect2(0, 0, 2048, 2048)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_of6v1"]
+atlas = ExtResource("3_wp3rd")
+region = Rect2(0, 0, 2048, 2048)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jreit"]
+atlas = ExtResource("4_lmhp4")
+region = Rect2(0, 0, 2048, 2048)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m5bbw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_on7lo")
+}],
+"loop": true,
+"name": &"Sprite_Ari_Default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jx4jp")
+}],
+"loop": true,
+"name": &"Sprite_Ari_Down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_roh1k")
+}],
+"loop": true,
+"name": &"Sprite_Ari_Left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_of6v1")
+}],
+"loop": true,
+"name": &"Sprite_Ari_Right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jreit")
+}],
+"loop": true,
+"name": &"Sprite_Ari_Up",
+"speed": 5.0
+}]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_on7lo"]
+size = Vector3(1, 1, 0.3)
+
+[node name="Playable_Ari_Character" type="CharacterBody3D" unique_id=1524485598 groups=["player"]]
+script = ExtResource("1_0nnhe")
+
+[node name="AriSprites" type="AnimatedSprite3D" parent="." unique_id=1493980977]
+transform = Transform3D(0.06625616, 0, 0, 0, 0.06625616, 0, 0, 0, 1, 0, 0, 0)
+sprite_frames = SubResource("SpriteFrames_m5bbw")
+animation = &"Sprite_Ari_Default"
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=30382439]
+shape = SubResource("BoxShape3D_on7lo")

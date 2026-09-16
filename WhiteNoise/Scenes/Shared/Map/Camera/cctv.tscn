@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://dgeosg3atau8k"]
+
+[ext_resource type="Script" uid="uid://dr8xr3x2e6cnl" path="res://Scripts/Shared/Map/Camera/cctv.gd" id="1_w7rmu"]
+
+[node name="CCTV" type="Node3D" unique_id=1942292923]
+script = ExtResource("1_w7rmu")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=89896169]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.9153781)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="CSGBox3D" unique_id=476920858]
+transform = Transform3D(0.65389615, 0, 0, 0, 0.65389615, 0, 0, 0, 1, 0, 0, -0.3972578)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=974606553]
